@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "moretabs",
+	"version": "${version}",
+	"name": "More Tabs",
+	"description": "mod that adds tabs!",
+	"authors": [
+		"Ty!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/moretabs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ty.moretabs.MoreTabs"
+		],
+		"fabric-datagen": [
+			"net.ty.moretabs.MoreTabsDataGenerator"
+		],
+		"client": [
+			"net.ty.moretabs.MoreTabsClient"
+		]
+	},
+	"mixins": [
+		"moretabs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
